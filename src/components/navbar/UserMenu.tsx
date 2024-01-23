@@ -5,7 +5,6 @@ import Avatar from "@/components/Avatar";
 import MenuItem from "@/components/navbar/MenuItem";
 import useRegisterModal from "@/hooks/useRegisterModal";
 const UserMenu = () => {
-    
     const registerModal = useRegisterModal();
     const [isOpen, setIsOpen] = useState(false);
     const toggleOpen = useCallback(() => setIsOpen((value) => !value), []);
@@ -33,7 +32,10 @@ const UserMenu = () => {
                     <div className="flex flex-col cursor-pointer">
                         <div>
                             <MenuItem onClick={() => {}} label="Login" />
-                            <MenuItem onClick={registerModal.} label="Sign up" />
+                            <MenuItem
+                                onClick={registerModal.onClose}
+                                label="Sign up"
+                            />
                         </div>
                     </div>
                 </div>
