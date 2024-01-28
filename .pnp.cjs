@@ -27,6 +27,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@hookform/resolvers", "virtual:93daa923060ab3a7bd374246e898259340ce15551cbd29736c8980aa08eb395101dd7a14837ff164a3398635af8afe2f1e4979a6ed0d34eb0ad1480a0b1b6010#npm:3.3.4"],\
+          ["@prisma/client", "virtual:93daa923060ab3a7bd374246e898259340ce15551cbd29736c8980aa08eb395101dd7a14837ff164a3398635af8afe2f1e4979a6ed0d34eb0ad1480a0b1b6010#npm:5.8.1"],\
           ["@types/node", "npm:20.11.5"],\
           ["@types/react", "npm:18.2.48"],\
           ["@types/react-dom", "npm:18.2.18"],\
@@ -428,6 +429,28 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@prisma/client", [\
+      ["npm:5.8.1", {\
+        "packageLocation": "./.yarn/unplugged/@prisma-client-virtual-5dca119095/node_modules/@prisma/client/",\
+        "packageDependencies": [\
+          ["@prisma/client", "npm:5.8.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:93daa923060ab3a7bd374246e898259340ce15551cbd29736c8980aa08eb395101dd7a14837ff164a3398635af8afe2f1e4979a6ed0d34eb0ad1480a0b1b6010#npm:5.8.1", {\
+        "packageLocation": "./.yarn/unplugged/@prisma-client-virtual-5dca119095/node_modules/@prisma/client/",\
+        "packageDependencies": [\
+          ["@prisma/client", "virtual:93daa923060ab3a7bd374246e898259340ce15551cbd29736c8980aa08eb395101dd7a14837ff164a3398635af8afe2f1e4979a6ed0d34eb0ad1480a0b1b6010#npm:5.8.1"],\
+          ["@types/prisma", null],\
+          ["prisma", "npm:5.8.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/prisma",\
+          "prisma"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@prisma/debug", [\
       ["npm:5.8.1", {\
         "packageLocation": "../../../.yarn/berry/cache/@prisma-debug-npm-5.8.1-19c7438d01-10c0.zip/node_modules/@prisma/debug/",\
@@ -727,6 +750,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["airbnb-clone-app-learn", "workspace:."],\
           ["@hookform/resolvers", "virtual:93daa923060ab3a7bd374246e898259340ce15551cbd29736c8980aa08eb395101dd7a14837ff164a3398635af8afe2f1e4979a6ed0d34eb0ad1480a0b1b6010#npm:3.3.4"],\
+          ["@prisma/client", "virtual:93daa923060ab3a7bd374246e898259340ce15551cbd29736c8980aa08eb395101dd7a14837ff164a3398635af8afe2f1e4979a6ed0d34eb0ad1480a0b1b6010#npm:5.8.1"],\
           ["@types/node", "npm:20.11.5"],\
           ["@types/react", "npm:18.2.48"],\
           ["@types/react-dom", "npm:18.2.18"],\

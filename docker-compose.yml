@@ -1,0 +1,34 @@
+version: "3.8"
+# For connection urls to the following instances, see
+# https://github.com/prisma/prisma/blob/main/TESTING.md#environment-variables
+#https://github.com/prisma/prisma/blob/98b31c192f39314a6c16fdfd11fd47e41ac551ea/docker/docker-compose.yml
+services:
+    mongo6:
+        build:
+            context: ./mongodb
+            args:
+                MONGO_VERSION: 6
+        environment:
+            # MONGO_REPLICA_HOST: 127.0.0.1
+            MONGO_REPLICA_HOST: 0.0.0.0
+            MONGO_REPLICA_PORT: 27019
+            # Use "mongo" instead of "mongosh" before v5.0
+            MONGO_COMMAND: "mongosh"
+        ports:
+            - "27019:27019"
+        restart: unless-stopped
+        # healthcheck:
+        #     # Use "mongo" instead of "mongosh" before v5.0
+        #     test:
+        #         [
+        #             "CMD",
+        #             "mongosh",
+        #             "admin",
+        #             "--port",
+        #             "27019",
+        #             "--eval",
+        #             "db.adminCommand('ping').ok",
+        #         ]
+        #     interval: 5s
+        #     timeout: 2s
+        #     retries: 20

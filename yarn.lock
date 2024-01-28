@@ -295,6 +295,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@prisma/client@npm:5.8.1":
+  version: 5.8.1
+  resolution: "@prisma/client@npm:5.8.1"
+  peerDependencies:
+    prisma: "*"
+  peerDependenciesMeta:
+    prisma:
+      optional: true
+  checksum: 08a0eb392b1b7773545faa08bb1501352a999b7c215fa16977c61596abdd86b573723c244fbc096d8a42bab9a9bbc31a9d761aa8a85c03d2f94d6a68c04ff17f
+  languageName: node
+  linkType: hard
+
 "@prisma/debug@npm:5.8.1":
   version: 5.8.1
   resolution: "@prisma/debug@npm:5.8.1"
@@ -527,6 +539,7 @@ __metadata:
   resolution: "airbnb-clone-app-learn@workspace:."
   dependencies:
     "@hookform/resolvers": "npm:^3.3.4"
+    "@prisma/client": "npm:5.8.1"
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
@@ -537,7 +550,7 @@ __metadata:
     next: "npm:14.1.0"
     postcss: "npm:^8"
     prettier: "npm:^3.2.4"
-    prisma: "npm:^5.8.1"
+    prisma: "npm:5.8.1"
     react: "npm:^18"
     react-dom: "npm:^18"
     react-hook-form: "npm:^7.49.3"
@@ -3141,7 +3154,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prisma@npm:^5.8.1":
+"prisma@npm:5.8.1":
   version: 5.8.1
   resolution: "prisma@npm:5.8.1"
   dependencies:
