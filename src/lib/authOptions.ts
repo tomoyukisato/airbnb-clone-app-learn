@@ -56,7 +56,7 @@ const authOptions: NextAuthOptions = {
             if(session.user) session.user.id = token.sub as string
             return session
         }
-    }
+    },
     pages: {
         signIn: "/",
     },
